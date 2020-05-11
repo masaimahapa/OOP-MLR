@@ -7,8 +7,6 @@ class ScatterPlotter(Plotter):
     def __init__(self, y, y_pred):
         super().__init__(y, y_pred)
     def plot(self):
-        if self.residuals is None:
-            self.residuals= self.run_calculations()
         plt.scatter(self.y_pred, self.residuals )
         #plt.scatter(self.y, self.y_pred)
         plt.title('Predictions vs actual values')
