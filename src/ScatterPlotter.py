@@ -1,7 +1,5 @@
-import numpy as np
-import math
 import matplotlib.pyplot as plt
-from Plotter import Plotter
+from .Plotter import Plotter
 
 class ScatterPlotter(Plotter):
     def __init__(self, y, y_pred):
